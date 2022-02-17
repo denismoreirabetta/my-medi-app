@@ -1,0 +1,48 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">
+          menu
+      </mat-icon>
+      <mat-icon *ngIf="sidenav.opened">
+          close
+      </mat-icon>
+  </button>
+  Medical Solutions
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8" mode="over">
+      <mat-divider></mat-divider>
+
+      <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
+
+      <h4 class="name">Juarez da Silva</h4>
+      <p class="designation">Software Engineer</p>
+
+      <button mat-button class="menu-button">
+          <mat-icon>home</mat-icon>
+          <span>Início</span>
+      </button>
+
+      <button mat-button class="menu-button" (click)="Navegacao('/pacientes')">
+          <mat-icon>person</mat-icon>
+          <span>Pacientes</span>
+      </button>
+      <button mat-button class="menu-button" (click)="Navegacao('/sidebar?lista')">
+        <mat-icon>person</mat-icon>
+        <span>Sobre</span>
+      </button>
+      <mat-divider></mat-divider>
+
+      <button mat-button class="menu-button" (click)="Navegacao('/login')">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </button>
+
+  </mat-sidenav>
+
+  <mat-sidenav-container>
+    <app-listapacientes></app-listapacientes>
+  </mat-sidenav-container>
+
+</mat-sidenav-container>
