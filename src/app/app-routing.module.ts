@@ -11,7 +11,6 @@ const routes: Routes = [
   { path: 'sidebar', component: SidebarComponent },
   { path: 'home', component: HomeComponent },
   { path: 'pacientes', component: ListapacientesComponent },
-  { path: 'sidebar:lista', component: SidebarComponent },
 ]
 
 @NgModule({
