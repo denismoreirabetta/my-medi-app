@@ -36,7 +36,7 @@ mat-sidenav-content {
     z-index: 12;
     max-width: 1050px;
     width: 100%;
-    background: #fff;
+    background: #ffff;
     border-radius: 12px;
     margin: 0 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
