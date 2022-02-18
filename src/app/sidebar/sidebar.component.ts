@@ -12,8 +12,8 @@ export class SidebarComponent implements OnInit {
 
   public pagina: string | undefined;
 
-  @ViewChild(MatSidenav)
-  sidenav!: MatSidenav;
+   @ViewChild(MatSidenav)
+   sidenav!: MatSidenav;
 
   constructor(private observer: BreakpointObserver, private router: Router, private route: ActivatedRoute) { }
 

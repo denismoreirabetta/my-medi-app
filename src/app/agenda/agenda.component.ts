@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgendaComponent implements OnInit {
 
+  selected: Date | null | undefined;
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -32,6 +32,19 @@ mat-sidenav-container {
   height: calc(100vh - 65px);
 }
 
+mat-sidenav-content {
+    z-index: 12;
+    max-width: 1050px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
 .menu-button {
   width: 100%;
   display: flex;

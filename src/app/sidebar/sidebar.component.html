@@ -11,7 +11,7 @@
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8" mode="over">
+  <mat-sidenav #sidenav="matSidenav" mode="over">
       <mat-divider></mat-divider>
 
       <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
@@ -29,12 +29,8 @@
           <span>Pacientes</span>
       </button>
       <button mat-button class="menu-button" [routerLink]="['/agenda']">
-        <mat-icon>person</mat-icon>
-        <span>Sobre</span>
-      </button>
-      <button mat-button class="menu-button" [routerLink]="['/agenda']">
-        <mat-icon>person</mat-icon>
-        <span>Sobre</span>
+        <mat-icon>mail</mat-icon>
+        <span>Contato</span>
       </button>
       <mat-divider></mat-divider>
 
