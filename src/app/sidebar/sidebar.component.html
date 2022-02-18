@@ -19,30 +19,39 @@
       <h4 class="name">Juarez da Silva</h4>
       <p class="designation">Software Engineer</p>
 
-      <button mat-button class="menu-button">
+      <button mat-button class="menu-button" [routerLink]="['/home']" >
           <mat-icon>home</mat-icon>
           <span>Início</span>
       </button>
 
-      <button mat-button class="menu-button" (click)="Navegacao('/pacientes')">
+      <button mat-button class="menu-button" [routerLink]="['/pacientes']">
           <mat-icon>person</mat-icon>
           <span>Pacientes</span>
       </button>
-      <button mat-button class="menu-button" (click)="Navegacao('/sobre')">
+      <button mat-button class="menu-button" [routerLink]="['/agenda']">
+        <mat-icon>person</mat-icon>
+        <span>Sobre</span>
+      </button>
+      <button mat-button class="menu-button" [routerLink]="['/agenda']">
         <mat-icon>person</mat-icon>
         <span>Sobre</span>
       </button>
       <mat-divider></mat-divider>
 
-      <button mat-button class="menu-button" (click)="Navegacao('/login')">
+      <button mat-button class="menu-button" [routerLink]="['/login']">
         <mat-icon>exit_to_app</mat-icon>
         <span>Logout</span>
       </button>
 
   </mat-sidenav>
 
-  <mat-sidenav-container>
-    <app-listapacientes></app-listapacientes>
-  </mat-sidenav-container>
+  <mat-sidenav-content>
+    <div *ngIf="pagina=='pacientes'">
+      <app-listapacientes></app-listapacientes>
+    </div>
+    <div *ngIf="pagina=='agenda'">
+      <app-agenda></app-agenda>
+    </div>
+  </mat-sidenav-content>
 
 </mat-sidenav-container>

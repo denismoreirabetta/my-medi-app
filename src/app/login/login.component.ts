@@ -13,9 +13,5 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  Navegacao(pageName: string) {
-    this.router.navigate([`${pageName}`]);
-  }
-
+  
 }

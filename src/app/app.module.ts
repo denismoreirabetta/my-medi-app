@@ -15,6 +15,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ListapacientesComponent } from './listapacientes/listapacientes.component';
 import { MatTableModule } from '@angular/material/table';
+import { AgendaComponent } from './agenda/agenda.component';
+import { Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  }
+];
 
 @NgModule({
   declarations: [
@@ -23,6 +33,7 @@ import { MatTableModule } from '@angular/material/table';
     SidebarComponent,
     HomeComponent,
     ListapacientesComponent,
+    AgendaComponent,
   ],
   imports: [
     BrowserModule,
